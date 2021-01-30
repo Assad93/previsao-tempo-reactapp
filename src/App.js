@@ -1,9 +1,23 @@
 import React from "react";
+import styled from 'styled-components';
+import GlobalStyles from "./GlobalStyles";
+import Header from "./Header";
+import SearchBar from "./SearchBar";
+import WeatherTable from "./WeatherTable";
+
+const Hr = styled.hr`
+  color: var(--text-primary);
+`;
+
 
 function App() {
   return (
     <>
-      <h1>Oi</h1>
+      <Header />
+      <SearchBar /> 
+      <Hr />
+      <WeatherTable />
+      <GlobalStyles />
     </>
   );
 }
